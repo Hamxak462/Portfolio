@@ -1,0 +1,23 @@
+.containers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+/* button{
+    width: 200px;
+    padding: 10px 60px;
+    border: 0;
+    box-shadow: 1px 1px 1px rgba(1, 1, 1, 0.25);
+    color: #333;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 50px;
+    background: linear-gradient(to right, lightseagreen , seagreen);
+} */
+.bea_img{
+    width: 200px;
+    height: 200px;
+    /* margin-bottom: 10px; */
+    border-radius: 50%;
+}

@@ -1,0 +1,46 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.gsap_container {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gsap_kuch{
+    max-width: 400px;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to right bottom, rgb(244, 81, 113), crimson);
+}
+.circle {
+  margin: 10px;
+  padding-top: 20px;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(to right bottom, lightblue, cadetblue);
+  overflow: hidden;
+}
+
+.box1{
+  height: 240px;
+  background-image: url("images/girl-img-hero-section.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+
+}

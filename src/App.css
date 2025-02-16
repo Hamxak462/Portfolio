@@ -1,0 +1,39 @@
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  /* background: linear-gradient(to right, rgb(117, 64, 197), #cfbfe9); */
+}
+body {
+  background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+
+/* button {
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: #7c4ac8;
+  outline: none;
+  border: 2px solid #533284;
+} */
+.hero_btn {
+  background-color: #06d889;
+  color: #444;
+  font-size: 13px;
+  font-weight: 700;
+}
+.hero_btn:hover {
+  background-color: #358560;
+  color: #fff;
+  transition-duration: 0.4s;
+  box-shadow: 2px 3px 4px #157347;
+  transform: scale(1);
+}
+
+.hero_btn:focus {
+  box-shadow: 1px 3px 3px 3px #157347;
+}

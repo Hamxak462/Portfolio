@@ -1,0 +1,87 @@
+.hero_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 2rem !important;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 10px 2rem;
+  margin-bottom: 20px;
+}
+/* ================================ */
+
+.hero_name span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff0099, #ffbb22, #ff0099);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: moveGradient 3s linear infinite;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Animations */
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* ================================ */
+/* Hero Section Media-Query*/
+@media screen and (max-width: 576px) {
+  .hero_name span {
+    font-size: 1rem;
+  }
+  .info_details h3 {
+    font-size: 1rem !important;
+  }
+  .hero_section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero_name span {
+    font-size: 2rem;
+  }
+  .info_details h3 {
+    font-size: 2rem !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Applies only on medium screens */
+  .responsive-img {
+    max-height: 350px; /* Adjust as needed */
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* ================================= */
+/* Softwar Engineer Text */
+.info_details h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff0099, #ffbb22, #ff0099);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: moveGradient2 4s linear infinite;
+  font-family: "Courier New", Courier, monospace;
+}
+/* Animations */
+@keyframes moveGradient2 {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}

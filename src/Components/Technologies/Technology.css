@@ -1,0 +1,20 @@
+.technoly_section{
+    overflow: hidden !important;;
+}
+.html_icon{
+    margin-top: 20px;
+    margin-right: 20px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+}
+.css_icon{
+    margin-right: 20px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+}
+.react_icon{
+    margin-top: 20px;
+    margin-right: 20px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+}

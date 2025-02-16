@@ -1,0 +1,35 @@
+.text_container{
+    border: 1px solid #999;
+    box-shadow: 1px 1px 1px rgba(1, 1, 1, 0.25);
+}
+.text_name{
+    font-size: 42px;
+    font-weight: 600;
+    font-family: monospace;
+    margin-bottom: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    border-right: 5px solid #333;
+    animation: 
+    typing 2s steps(18),
+    cursor .4s step-end infinite alternate;
+    ;
+}
+
+/* cursor blinking */
+/* @keyframes cursor {
+        50% {
+            border-color: transparent;
+        }
+} */
+
+/* Typing Effect */
+/* @keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+} */

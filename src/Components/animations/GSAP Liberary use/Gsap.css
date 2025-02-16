@@ -1,0 +1,15 @@
+.box{
+    text-align: center;
+    
+    background-color: yellowgreen;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px ;
+}
+.box h1 {
+    color: white;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

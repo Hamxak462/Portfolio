@@ -1,0 +1,17 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right bottom, rgb(239, 124, 191), rgb(155, 6, 88));
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+}
