@@ -1,20 +1,26 @@
 .technoly_section{
+    background-color: #333;
     overflow: hidden !important;;
 }
 .html_icon{
     margin-top: 20px;
     margin-right: 20px;
-    border: 2px solid #eee;
+    /* border: 2px solid #eee; */
+    box-shadow : 0px 0px 3px #eee;
     border-radius: 8px;
 }
 .css_icon{
     margin-right: 20px;
-    border: 2px solid #eee;
+    /* border: 2px solid #eee; */
+    box-shadow : 0px 0px 3px #eee;
+
     border-radius: 8px;
 }
 .react_icon{
     margin-top: 20px;
     margin-right: 20px;
-    border: 2px solid #eee;
+    /* border: 2px solid #eee; */
+    box-shadow : 0px 0px 3px #eee;
+
     border-radius: 8px;
 }

@@ -23,8 +23,8 @@ const skillImagesTwoRow = [
   " /svg folder/nodejs-removebg.png",
   " /svg folder/Next.js_img.png",
   " /svg folder/css_icon.png",
-  " /svg folder/css_icon.png",
-  " /svg folder/css_icon.png",
+  " /svg folder/vercel_img.png",
+  " /svg folder/github_icon-removebg-preview.png",
   " /svg folder/JS_img-Rem_bg.png",
 ]
 const skillImagesThreeRow = [
@@ -107,7 +107,8 @@ const Technology = () => {
                   width: "150px",
                   height: "150px",
                   // padding: "8px 0",
-                  padding: "19px 10px"      
+                  padding: "19px 10px",
+                      
                 }}
               />
              
