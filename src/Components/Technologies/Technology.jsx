@@ -28,7 +28,7 @@ const skillImagesTwoRow = [
   " /svg folder/JS_img-Rem_bg.png",
 ]
 const skillImagesThreeRow = [
-  "/svg folder/html_icon.png",
+  "/svg folder/github_icon-removebg-preview.png",
   "/svg folder/bootstrap_icon.png",
   "/svg folder/JS_img-Rem_bg.png",
   "/svg folder/css_icon.png",
