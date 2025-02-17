@@ -9,7 +9,7 @@ import gsap from "gsap";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 const HeroSec = () => {
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(true);
 
   useEffect(() => {
     const checkScreenSize = () => {
@@ -29,23 +29,23 @@ const HeroSec = () => {
     delaySpeed: 1000, // Delay between words in milliseconds
   });
 
-  const heroImgRef = useRef();
-  const heroTextRef = useRef();
+  // const heroImgRef = useRef();
+  // const heroTextRef = useRef();
 
-  // GSAP animation here is
-  useGSAP(() => {
-    gsap.from(heroImgRef.current, {
-      x: 360,
-      duration: 2,
-      // ease: "elastic.in",
-    });
+  // // GSAP animation here is
+  // useGSAP(() => {
+  //   gsap.from(heroImgRef.current, {
+  //     x: 360,
+  //     duration: 2,
+  //     // ease: "elastic.in",
+  //   });
 
-    gsap.from(heroTextRef.current, {
-      x: -360,
-      duration: 2,
-      // ease: "elastic.in",
-    });
-  });
+  //   gsap.from(heroTextRef.current, {
+  //     x: -360,
+  //     duration: 2,
+  //     // ease: "elastic.in",
+  //   });
+  // });
 
   return (
     <motion.section>
@@ -57,16 +57,16 @@ const HeroSec = () => {
       >
         {/* Hero Text */}
         <div
-          ref={heroTextRef}
+          // ref={heroTextRef}
           className="col-lg-7 col-md-12 col-sm-12"
           style={{
             overflow: "hidden",
           }}
         >
           <motion.div
-            initial={true ? {} : { opacity: 0, x: -360, y: -360 }}
-            whileInView={true ? {} : { opacity: 1, x: 0, y: 0 }}
-            transition={{ type: "linear", duration: 1 }}
+          initial = {{opacity: 0, x : -360, y : -360}}
+          whileInView={{opacity: 1, x : 0,y : 0}}
+          transition={{ type: "linear", duration: 1 }}
           >
             <div className="hero_name col-lg-12 col-md-12 col-sm-12">
               <h1>
@@ -99,23 +99,24 @@ const HeroSec = () => {
         </div>
 
         {/* Hero Image */}
-        <div className="border col-lg-4 col-md-12 col-sm-12">
+        <div className="col-lg-5 col-md-12 col-sm-12 order-lg-last order-sm-first">
           <motion.div
-            initial={true ? {} : { opacity: 0, x: 360, y: -360 }}
-            whileInView={true ? {} : { opacity: 1, x: 0, y: 0 }}
+            initial={isSmallScreen ? {} : { opacity: 0, x: 300}} // Start off-screen to the right
+            whileInView={isSmallScreen ? {} : { opacity: 1, x: 0 }} // Animate into view
             transition={{ ease: "easeInOut", duration: 2 }}
             className="hero_img col-sm-6 col-md-6 col-lg-6 mx-auto"
-            ref={heroImgRef}
-            style={{ width: "250px", height: "250px", overflow : "hidden "}}
+            // ref={heroImgRef}
+            style={{ width: "250px", height: "250px" , overflow: "hidden"}}
           >
             <img
               src="images/my_img.jpg"
               alt="Hero Image"
               style={{
                 width: "100%",
-                height: "300px",
+                height: "250px",
                 display: "block",
                 objectFit: "cover",
+                borderRadius: "10px",
               }}
               className="responsive-img"
               loading="eager"

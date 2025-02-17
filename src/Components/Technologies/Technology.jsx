@@ -12,28 +12,28 @@ import { span } from "motion/react-client";
 
 const skillImages = [
   "/svg folder/html_icon.png",
-  "/svg folder/html_icon.png",
-  "/svg folder/html_icon.png",
-  "/svg folder/html_icon.png",
-  "/svg folder/html_icon.png",
-  "/svg folder/html_icon.png",
+  "/svg folder/bootstrap_icon.png",
+  "/svg folder/JS_img-Rem_bg.png",
+  "/svg folder/css_icon.png",
+  "/svg folder/gsap-removebg_icon.png",
+  "/svg folder/New_mui-removebg-preview.png",
 ];
 
 const skillImagesTwoRow = [
+  " /svg folder/nodejs-removebg.png",
+  " /svg folder/Next.js_img.png",
   " /svg folder/css_icon.png",
   " /svg folder/css_icon.png",
   " /svg folder/css_icon.png",
-  " /svg folder/css_icon.png",
-  " /svg folder/css_icon.png",
-  " /svg folder/css_icon.png",
+  " /svg folder/JS_img-Rem_bg.png",
 ]
 const skillImagesThreeRow = [
-  " /svg folder/react-3-removebg-preview.png",
-  " /svg folder/react-3-removebg-preview.png",
-  " /svg folder/react-3-removebg-preview.png",
-  " /svg folder/react-3-removebg-preview.png",
-  " /svg folder/react-3-removebg-preview.png",
-  " /svg folder/react-3-removebg-preview.png",
+  "/svg folder/html_icon.png",
+  "/svg folder/bootstrap_icon.png",
+  "/svg folder/JS_img-Rem_bg.png",
+  "/svg folder/css_icon.png",
+  "/svg folder/gsap-removebg_icon.png",
+  "/svg folder/New_mui-removebg-preview.png",
 ]
 const Technology = () => {
   
@@ -90,7 +90,7 @@ const Technology = () => {
 
 
           <motion.div
-            initial={{Opacity : 0 , x : -360}}
+            initial={{Opacity : 0 , x : -300}}
             whileInView={{opacity : 1, x : 0}}
             transition={{duration : 2 , ease : 'linear'}}
             className="d-flex flex-wrap justify-content-center"
@@ -106,8 +106,8 @@ const Technology = () => {
                 style={{
                   width: "150px",
                   height: "150px",
-                  padding: "8px 0",
-                  
+                  // padding: "8px 0",
+                  padding: "19px 10px"      
                 }}
               />
              
@@ -117,7 +117,7 @@ const Technology = () => {
 
           {/* Second Row */}
           <motion.div 
-          initial = {{opacity: 0 , x : 360}}
+          initial = {{opacity: 0 , x : 300}}
           whileInView={{opacity: 1 , x : 0}}
           transition={{duration : 2 , ease : 'linear'}}
           className="d-flex flex-wrap justify-content-center mt-2">
@@ -139,26 +139,28 @@ const Technology = () => {
           </motion.div>
 
           {/* Third Row */}
-          <motion.div
-            initial = {{opacity: 0, x: -360}}
-            whileInView={{opacity: 1, x : 0}}
-            transition={{duration : 2, ease : 'linear'}}
-           className="d-flex flex-wrap justify-content-center">
-            {
-              skillImagesThreeRow.map((skillImageThreeRow, index) => (
-               <img
-                 className="react_icon"
-                 src={skillImageThreeRow}
-                 alt="react_icon"
-                 style={{
-                   width: "150px",
-                   height: "150px",
-                   padding: "14px 12px",
-                   marginTop : "20px",
-                 }}
-               />
-             ))
-            }
+           <motion.div
+            initial={{Opacity : 0 , x : -300}}
+            whileInView={{opacity : 1, x : 0}}
+            transition={{duration : 2 , ease : 'linear'}}
+            className="d-flex flex-wrap justify-content-center"
+            
+            >
+            {skillImagesThreeRow.map((skillImage, index) => (
+              
+              <img
+                key={index}
+                className="html_icon"
+                src={skillImage}
+                alt="html_icon"
+                style={{
+                  width: "150px",
+                  height: "150px",
+                  padding: "19px 10px"      
+                }}
+              />
+             
+            ))}
           </motion.div>
         </div>
       </div>
